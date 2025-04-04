@@ -20,7 +20,7 @@ fn main() {
     if url.scheme_str() != Some("http") {
         eprintln!("This example only works with 'http' URLs.");
     }
-    let local_ip = String::from("192.168.8.107:0");
+    let local_ip = String::from("172.31.2.192:0");
     let local_addr: SocketAddr = local_ip.parse().unwrap();
 
     // let connector = HttpConnector::new();
