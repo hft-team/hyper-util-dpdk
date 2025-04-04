@@ -1,0 +1,13 @@
+[term]
+verbose = true
+
+[build]
+incremental = true
+#rustflags = ["-C", "target-cpu=native", "-Z", "tune-cpu=native"]
+
+# cargo install sccache
+
+[unstable]
+codegen-backend = true
+trim-paths = true
+profile-rustflags = true
